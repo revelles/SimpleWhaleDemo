@@ -42,8 +42,8 @@ jobs:
         with:
           context: ./
           file: ./Dockerfile
-          push: false
-          #tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
+          push: true
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
           #tags: frevelles/simplewhale:latest
 
       - name: Image digest
