@@ -45,6 +45,6 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/simplewhale:latest
           #tags: frevelles/simplewhale:latest
-
-      - name: Image digest
+     
+     - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
